@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Playfair Display", sans-serif;
   font-weight: normal;
   font-style: normal;
   color: #6B6F92;
@@ -75,15 +75,16 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Archivo Black", sans-serif;
+  font-family: "Playfair Display", sans-serif;
   font-weight: 700;
   margin: 0px;
-  color: #313450;
+  color: #5d131c;
 }
 
 .section-title p {
   font-size: 18px;
   line-height: 28px;
+  color: #000000;
 }
 
 h1 a,
@@ -131,6 +132,7 @@ p {
   font-weight: 400;
   line-height: 25px;
   margin: 0px;
+  color: #000000;
 }
 
 .img-bg {
@@ -152,21 +154,21 @@ p {
 /*===== All Button Style =====*/
 .main-btn {
   display: inline-block;
-  font-weight: 500;
+  font-weight: 450; /* Reducido de 500 a 400 para una letra más fina */
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
   user-select: none;
-  padding: 20px 40px;
-  font-size: 18px;
-  border-radius: 50px;
+  padding: 15px 35px; /* Reducido de 20px 40px (Menos alto y un poco menos ancho) */
+  font-size: 16px; /* Reducido de 18px para refinar el texto */
   color: #fff;
   cursor: pointer;
   z-index: 5;
   transition: all .4s ease-in-out;
   border: none;
-  background: #4E6EF1;
+  background: #5d131c;
   overflow: hidden;
+  border-radius: 4px; /* OPCIONAL: Un ligero toque redondeado suele dar un aspecto más pulido */
 }
 
 .main-btn:hover {
@@ -174,9 +176,29 @@ p {
 }
 
 .main-btn.border-btn {
-  border: 2px solid #4E6EF1;
+  border: 2px solid #5d131c;
   background: transparent;
-  color: #313450;
+  color: #5d131c;
+}
+
+.main-btn-consulta {
+  font-family: "Poppins", sans-serif;
+  display: inline-block;
+  font-weight: 450; /* Reducido de 500 a 400 para una letra más fina */
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  padding: 15px 35px; /* Reducido de 20px 40px (Menos alto y un poco menos ancho) */
+  font-size: 16px; /* Reducido de 18px para refinar el texto */
+  color: #9a7458;
+  cursor: pointer;
+  z-index: 5;
+  transition: all .4s ease-in-out;
+  border: 2px solid #9a7458;
+  background: transparent;
+  overflow: hidden;
+  border-radius: 30px; /* OPCIONAL: Un ligero toque redondeado suele dar un aspecto más pulido */
 }
 
 .btn-hover {
@@ -206,7 +228,7 @@ p {
 .scroll-top {
   width: 45px;
   height: 45px;
-  background: #4E6EF1;
+  background: #5d131c;
   display: none;
   justify-content: center;
   align-items: center;
@@ -223,7 +245,7 @@ p {
 
 .scroll-top:hover {
   color: #fff;
-  background: rgba(78, 110, 241, 0.8);
+  background: rgba(93, 19, 28, 0.8);
 }
 
 @keyframes animation1 {
@@ -422,11 +444,11 @@ p {
 }
 
 .sticky .navbar .navbar-nav .nav-item a {
-  color: #313450;
+  color: #5d131c;
 }
 
 .sticky .navbar .navbar-toggler .toggler-icon {
-  background: #313450;
+  background: #5d131c;
 }
 
 .navbar {
@@ -511,7 +533,7 @@ p {
 .navbar-nav .nav-item a {
   font-size: 18px;
   font-weight: 400;
-  color: #6B6F92;
+  color: #5d131c;
   transition: all 0.3s ease-out 0s;
   padding: 10px 0;
   position: relative;
@@ -521,7 +543,7 @@ p {
   .navbar-nav .nav-item a {
     display: inline-block;
     padding: 6px 0px;
-    color: #6B6F92;
+    color: #5d131c;
   }
 }
 
@@ -533,7 +555,7 @@ p {
   left: auto;
   width: 0;
   height: 2px;
-  background: #4E6EF1;
+  background: #5d131c;
   z-index: -1;
   opacity: 0;
   border-radius: 10px;
@@ -541,7 +563,7 @@ p {
 }
 
 .navbar-nav .nav-item a:hover, .navbar-nav .nav-item a.active {
-  color: #4E6EF1;
+  color: #811c28;
 }
 
 .navbar-nav .nav-item a:hover::before, .navbar-nav .nav-item a.active::before {
@@ -698,9 +720,9 @@ p {
 }
 
 .hero-section .hero-content span {
-  font-family: "Archivo Black", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 30px;
-  color: #4E6EF1;
+  color: #9a7458;
   margin-bottom: 20px;
 }
 
@@ -834,7 +856,7 @@ p {
   background: none;
   font-size: 20px;
   font-weight: 500;
-  color: #313450;
+  color: #000000;
   position: relative;
 }
 
@@ -846,6 +868,7 @@ p {
   top: 50%;
   transform: translateY(-50%);
   transition: all 0.3s ease-out 0s;
+  color: #5d131c;
 }
 
 .about-section .accordion .single-faq button.collapsed::after {
@@ -901,24 +924,24 @@ p {
   margin: auto;
   margin-bottom: 30px;
   font-size: 40px;
-  color: #313450;
+  color: #ffffff;
   transition: all 0.3s ease-out 0s;
 }
 
 .service-section .single-service .icon.color-1 {
-  background: #FFEFFF;
+  background: #5d131c;
 }
 
 .service-section .single-service .icon.color-2 {
-  background: #E4E9FF;
+  background: #5d131c;
 }
 
 .service-section .single-service .icon.color-3 {
-  background: #FFEAEA;
+  background: #5d131c;
 }
 
 .service-section .single-service .icon.color-4 {
-  background: #ECE8FF;
+  background: #5d131c;
 }
 
 .service-section .single-service .content h3 {
