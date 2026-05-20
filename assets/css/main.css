@@ -155,6 +155,7 @@ p {
 /*===== All Button Style =====*/
 .main-btn {
   display: inline-block;
+  font-family: "Poppins", sans-serif;
   font-weight: 450; /* Reducido de 500 a 400 para una letra más fina */
   text-align: center;
   white-space: nowrap;
