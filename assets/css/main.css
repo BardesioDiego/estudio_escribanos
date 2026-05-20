@@ -133,6 +133,7 @@ p {
   line-height: 25px;
   margin: 0px;
   color: #000000;
+  font-family: "Poppins", sans-serif;
 }
 
 .img-bg {
@@ -210,6 +211,10 @@ p {
   background: transparent;
   overflow: hidden;
   border-radius: 30px; /* OPCIONAL: Un ligero toque redondeado suele dar un aspecto más pulido */
+}
+
+.main-btn-consulta:hover {
+  color: #5d131c;
 }
 
 .btn-hover {
@@ -483,7 +488,13 @@ p {
 .navbar-brand img {
   height: 80px;
   width: auto;
+}
 
+@media only screen and (max-width: 767px) {
+  .navbar-brand img {
+    height: 50px;
+    width: auto;
+  }
 }
 
 .navbar-toggler {
@@ -550,6 +561,7 @@ p {
   transition: all 0.3s ease-out 0s;
   padding: 10px 0;
   position: relative;
+  font-family: "Poppins", sans-serif;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
@@ -557,6 +569,7 @@ p {
     display: inline-block;
     padding: 6px 0px;
     color: #5d131c;
+    font-family: "Poppins", sans-serif;
   }
 }
 
@@ -590,6 +603,44 @@ p {
   top: 100%;
   opacity: 1;
   visibility: visible;
+}
+
+/* Botón Enviar Consulta - Ajustado Exacto */
+.btn-enviar-consulta {
+    background-color: #5d131c !important; /* El tono exacto de tu logo/diseño */
+    color: #ffffff !important;
+    font-weight: 600;                     /* Negrita pero estilizada */
+    font-size: 5px;   
+    white-space: nowrap !important; 
+    width: auto !important;                   /* Tamaño de letra compacto */
+    letter-spacing: 0.5px;                /* Un toque de espacio entre letras */
+    padding: 12px 35px !important; 
+    margin-left: 30px !important;                 /* ¡Clave! Más espacio arriba/abajo y bastante más a los lados */
+    border-radius: 50px;                  /* Cápsula perfecta */
+    text-transform: uppercase;
+    display: inline-flex;                 /* Ayuda a centrar el texto por dentro */
+    align-items: center;
+    justify-content: center;
+    text-decoration: none !important;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto Hover */
+.btn-enviar-consulta:hover {
+    background-color: #811c28 !important;
+    color: #ffffff !important;
+}
+
+@media (max-width: 767px) {
+  .btn-enviar-consulta {
+    padding: 8px 20px !important;
+    font-size: 12px !important;
+    margin-left: 0 !important;
+  }
+  
+  .navbar-nav .nav-item.ms-lg-3 {
+    margin-left: 0 !important;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -1109,6 +1160,7 @@ p {
 
 .footer .widget-wrapper .footer-widget ul li a {
   color: #ffffff;
+  font-family: "Poppins", sans-serif;
 }
 
 .footer .widget-wrapper .footer-widget ul li a:hover {
