@@ -470,7 +470,9 @@ p {
 }
 
 .navbar-brand img {
-  max-width: 180px;
+  height: 80px;
+  width: auto;
+
 }
 
 .navbar-toggler {
@@ -644,6 +646,8 @@ p {
   display: none;
 }
 
+
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .navbar-nav .sub-nav-toggler {
     display: block;
@@ -689,10 +693,12 @@ p {
   position: relative;
   z-index: 1;
   padding: 160px 0 120px;
-  background-image: url("../img/hero/hero-bg.jpg");
-  background-repeat: no-repeat;
-  background-position: left bottom;
-  background-size: cover;
+  background: #ffffff;
+}
+
+.check {
+  color: #9a7458;
+  font-size: -40px;
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -799,6 +805,11 @@ p {
   right: -300px;
 }
 
+.hero-img img {
+  width: 120%;
+  height: auto;
+}
+
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .hero-section .hero-shape .shape.shape-1 {
     top: -420px;
@@ -880,10 +891,19 @@ p {
   padding-bottom: 20px;
 }
 
+.bi::before {
+  color: #9a7458 !important;
+}
+
+.accordion-icon-color.bi,
+.accordion-icon-color.bi::before {
+  color: #9a7458;
+}
+
 /* ============== service css ==============*/
 
 .service-section {
-  background-image: url("../img/service/service-bg.jpg");
+ background: #ffffff;
 }
 
 .service-section .single-service {
@@ -947,6 +967,19 @@ p {
 .service-section .single-service .content h3 {
   font-size: 24px;
   margin-bottom: 15px;
+}
+
+.cta-section {
+  background-image: url("../img/escribanos_uruguay/escribanos_montevideo_maldonado\ \(2\).png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cta-section .cta-btn a.cta-custom-btn {
+  background: #9a7458 !important;
+  color: #fff !important;
+  border: 2px solid #9a7458 !important;
 }
 
 /* ============= counter-up css =========== */
