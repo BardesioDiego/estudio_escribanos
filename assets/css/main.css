@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: normal;
   font-style: normal;
   color: #6B6F92;
@@ -75,7 +75,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   margin: 0px;
   color: #5d131c;
@@ -871,6 +871,8 @@ p {
 .hero-img img {
   width: 120%;
   height: auto;
+  display: block;
+  margin: 0 0 0 10%;
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
